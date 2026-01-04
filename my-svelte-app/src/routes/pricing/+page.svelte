@@ -2,13 +2,17 @@
   <h1>Pricing</h1>
   <p>Transparent and fair pricing for every service.</p>
   <table class="pricing">
-    <tr><th>Service</th><th>Price</th></tr>
-    <tr><td>Haircut & Style</td><td>$45</td></tr>
-    <tr><td>Color & Highlights</td><td>$80+</td></tr>
-    <tr><td>Manicure</td><td>$25</td></tr>
-    <tr><td>Pedicure</td><td>$35</td></tr>
-    <tr><td>Signature Facial</td><td>$70</td></tr>
-    <tr><td>60m Massage</td><td>$85</td></tr>
+    <thead>
+      <tr><th>Service</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Haircut & Style</td><td>$45</td></tr>
+      <tr><td>Color & Highlights</td><td>$80+</td></tr>
+      <tr><td>Manicure</td><td>$25</td></tr>
+      <tr><td>Pedicure</td><td>$35</td></tr>
+      <tr><td>Signature Facial</td><td>$70</td></tr>
+      <tr><td>60m Massage</td><td>$85</td></tr>
+    </tbody>
   </table>
 </section>
 

@@ -1,11 +1,10 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+  import favicon from '$lib/assets/favicon.svg';
+  import "../app.css";
+  import NavBar from "../lib/components/NavBar.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 
-	let { children } = $props();
-<script>
-	import "../app.css";
-	import NavBar from "../lib/components/NavBar.svelte";
-	import Footer from "../lib/components/Footer.svelte";
+  let { children } = $props();
 </script>
 
 <div class="site">
@@ -13,7 +12,7 @@
 		<NavBar />
 	</header>
 	<main class="site__main">
-		<slot />
+		{@render children()}
 	</main>
 	<footer class="site__footer">
 		<Footer />
@@ -26,6 +25,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href={favicon} />
 </svelte:head>
 
-{@render children()}
