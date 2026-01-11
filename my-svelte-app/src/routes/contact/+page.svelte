@@ -51,7 +51,7 @@
   input, textarea, select { padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
   .grid--full { grid-column: 1 / -1; }
   .btn { display: inline-block; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border); color: var(--text-strong); text-decoration: none; background: var(--surface); }
-  .btn--primary { background: #111; color: #fff; border-color: #111; }
+  .btn--primary { background: var(--brand); color: var(--brand-contrast); border-color: var(--brand); }
   .notice { border: 1px solid var(--border); border-left: 4px solid #2ea043; padding: 8px 12px; border-radius: 8px; background: var(--surface-2); margin-bottom: 12px; }
   .error { color: #b30000; }
   @media (max-width: 640px) { .form__grid { grid-template-columns: 1fr; } }
