@@ -49,6 +49,6 @@
 	blockquote { border-left: 4px solid var(--hover); margin: 0; padding: 8px 12px; color: var(--text); background: var(--surface-2); border-radius: 8px; }
 	.cta { text-align: center; padding: 40px 24px; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 	.btn { display: inline-block; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border); color: var(--text-strong); text-decoration: none; background: var(--surface); }
-	.btn--primary { background: #111; color: #fff; border-color: #111; }
+	.btn--primary { background: var(--brand); color: var(--brand-contrast); border-color: var(--brand); }
 	@media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } .quotes { grid-template-columns: 1fr; } }
 </style>
