@@ -10,7 +10,10 @@
 </script>
 
 <nav class="nav">
-  <a class="nav__brand" href="/">Beauty Bliss</a>
+  <a class="nav__brand" href="/">
+    <img class="nav__logo" src="/logo.svg" alt="Beauty Bliss logo" width="28" height="28" />
+    <span>Beauty Bliss</span>
+  </a>
   <button class="nav__toggle" aria-label="Toggle menu" on:click={() => document.body.classList.toggle('menu-open')}>
     ☰
   </button>
@@ -23,7 +26,8 @@
 
 <style>
   .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px; position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--border); z-index: 50; }
-  .nav__brand { font-weight: 700; font-size: 1.125rem; color: var(--text-strong); text-decoration: none; }
+  .nav__brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.125rem; color: var(--text-strong); text-decoration: none; }
+  .nav__logo { border-radius: 8px; box-shadow: 0 0 0 1px var(--border); }
   .nav__links { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; }
   .nav__link { text-decoration: none; color: var(--text); padding: 8px 12px; border-radius: 8px; }
   .nav__link:hover { background: var(--hover); color: var(--text-strong); }
