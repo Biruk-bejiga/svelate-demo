@@ -1,0 +1,8 @@
+[
+  { "src": "/gallery/img1.svg", "alt": "Elegant hairstyle", "caption": "Hair styling" },
+  { "src": "/gallery/img2.svg", "alt": "Manicure set", "caption": "Nail care" },
+  { "src": "/gallery/img3.svg", "alt": "Skincare facial", "caption": "Facial treatment" },
+  { "src": "/gallery/img4.svg", "alt": "Salon interior", "caption": "Relaxing space" },
+  { "src": "/gallery/img5.svg", "alt": "Color highlights", "caption": "Color & highlights" },
+  { "src": "/gallery/img6.svg", "alt": "Spa massage", "caption": "Massage & spa" }
+]
