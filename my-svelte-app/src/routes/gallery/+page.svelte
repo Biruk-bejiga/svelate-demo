@@ -5,9 +5,10 @@
     {#each images as img}
       <figure class="gallery__item">
         <picture>
-          <!-- Try WebP first (if you later add webp files) -->
-          <source type="image/webp" srcset={img.src.replace(/\.[a-zA-Z0-9]+$/, '.webp')} sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw" />
-          <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
+          {#each img.picture.sources as source}
+            <source srcset={source.srcset} type={source.type} sizes={sizes} />
+          {/each}
+          <img src={img.picture.img.src} alt={img.alt} loading="lazy" decoding="async" />
         </picture>
         <figcaption>{img.caption}</figcaption>
       </figure>
@@ -16,8 +17,9 @@
 </section>
 
 <script lang="ts">
-  export let data: { images: { src: string; alt: string; caption: string }[] };
-  const { images } = data;
+  type Picture = { sources: { type: string; srcset: string }[]; img: { src: string; w: number; h: number; format: string } };
+  export let data: { images: { picture: Picture; alt: string; caption: string }[]; sizes: string };
+  const { images, sizes } = data;
 </script>
 
 <style>
